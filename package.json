@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "cf dev",
-    "build": "cf build",
-    "preview": "cf build && vite preview",
+    "dev": "node scripts/cf-vite.ts dev",
+    "build": "node scripts/cf-vite.ts build",
+    "preview": "node scripts/cf-vite.ts build && vite preview",
     "test": "vitest run",
     "deploy": "cf deploy",
     "setup": "node scripts/setup.ts",
